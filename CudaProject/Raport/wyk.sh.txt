@@ -1,0 +1,5 @@
+set term jpeg
+set ylabel "Time"
+set xlabel "Number of elements"
+set out "times.jpg"
+p "pot100.dat" u 2:3 w l t "100 elements CPU", "pot100.dat" u 2:4 w l t "100 elements GPU", "pot1000.dat" u 2:3 w l t "1000 elements CPU", "pot1000.dat" u 2:4 w l t "1000 elements GPU"
